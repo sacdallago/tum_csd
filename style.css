@@ -21,7 +21,7 @@ body {
 .boxTitle h2{font-size: 4em;}
 
 body {
-	background: url(images/tum_rainbow.jpg) no-repeat center center fixed;
+	background: url(images/tum_rainbow_smaller.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
