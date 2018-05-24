@@ -1,5 +1,5 @@
 /* CSS declarations go here */
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url('/vendor/webfontkit/open-sans/open-sans.min.css');
 
 html {
 	height: 100%;
