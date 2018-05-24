@@ -13,12 +13,19 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
+.boxTitle {
+	margin: 4em 0em 4em 0em;
+}
+
 .boxTitle h1, .boxTitle h2{
-	font-size: 8em;
+	font-size: 4em;
 	line-height: 1em;
 	color: white;
 }
-.boxTitle h2{font-size: 4em;}
+
+.boxTitle h2{
+	font-size: 2em;
+}
 
 body {
 	background: url(images/tum_rainbow_smaller.jpg) no-repeat center center fixed;
@@ -28,13 +35,14 @@ body {
 	background-size: cover;
 }
 
-
 .box {
 	background-color: rgba(255,255,255,0.9);
 	max-width: 800px;
 	margin: 20px auto;
-	padding: 20px;
 	font-size: 18px;
+	padding: 1em;
+	text-align: justify;
+	margin-bottom: 3em;
 }
 
 #credits {
