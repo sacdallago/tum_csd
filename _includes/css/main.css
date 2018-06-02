@@ -7,7 +7,7 @@ html {
 body {
     background: #E2E4E7;
     padding: 0;
-    text-align: center;
+    text-align: justify;
     font-family: 'open sans';
     position: relative;
     margin: 0;
@@ -322,7 +322,6 @@ body.disabled-onepage-scroll  section .page_container h1{
     width: 100%;
 }
 body.disabled-onepage-scroll section .page_container h2, body.disabled-onepage-scroll section .page_container .credit, body.disabled-onepage-scroll section .page_container .btns{
-    text-align: center;
     width: 100%;
 }
 
@@ -396,10 +395,9 @@ body.disabled-onepage-scroll .main section.page3 .page_container {
 }
 
 .tumlogo {
-    position: absolute;
+    position: fixed;
     bottom: 0;
-    right: 20px;
-    z-index: 1000
+    right: 10px;
 }
 
 
