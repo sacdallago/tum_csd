@@ -214,7 +214,6 @@ header {
 .main section .page_container {
     position: relative;
     margin: 0 auto 0;
-    max-width: 950px;
     z-index: 3;
 }
 .main section  {
@@ -271,15 +270,12 @@ header {
     text-align: center;
     padding: 0;
     margin-bottom: 15px;
-    font-size: 50px;
     letter-spacing: -1px;
     color: white;
 }
 .main section.page2 h2 {
     color: rgba(255,255,255,0.85);
     text-align: justify;
-    line-height: 160%;
-    font-weight: 100;
 }
 .viewing-page-2 .back{
     background: rgba(0, 0, 0, 0.25);
@@ -411,9 +407,8 @@ body.disabled-onepage-scroll .main section.page3 .page_container {
 
 
 .scroll {
-    padding-top: 80px;
-    position: absolute;
-    bottom: 0;
+    position: fixed;
+    bottom: 100px;
     right: 50%;
 }
 .scroll span {

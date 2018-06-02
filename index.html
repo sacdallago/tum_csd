@@ -5,14 +5,20 @@ layout: def
 
 
 <section id="section07" class="page1">
-    <video loop muted autoplay poster="assets/images/videoframe.jpg" class="fullscreen-bg__video">
-        <source src="assets/videos/stitces.webm" type="video/webm">
-    </video>
-    <div class="scroll"><span></span><span></span><span></span></div>
+    <div class="page_container" style="height: 100%;">
+        <div class="fullscreen-bg">
+            <video loop muted autoplay poster="assets/images/videoframe.jpg" class="fullscreen-bg__video">
+                <source src="assets/videos/stitces.webm" type="video/webm">
+            </video>
+        </div>
+
+        <div class="scroll"><span></span><span></span><span></span></div>
+    </div>
+
 </section>
 
 <section class="page2">
-    <div class="page_container">
+    <div class="page_container" style="height: 100%">
         <h1><strong>#LGBTUM</strong> Exzellenz ist Bunt!</h1>
         <h2>Die Studentische Vertretung der Technische Universität München stellt dieses Jahr einen Wagen für den Christopher Street Day! Du willst teilnehmen? Hier die Eckdaten:</h2>
         <br /><br />
@@ -30,28 +36,22 @@ layout: def
             <a class="reload btn" href="https://helfen.fs.tum.de/csd/">Jetzt Anmelden</a>
             <a class="text-btn" href="https://helfen.fs.tum.de/csd17helfen/" style="color: whitesmoke">Wir suchen auch noch Helfer!</a>
         </div>
-    </div>
-    <div class="scroll"><span></span><span></span><span></span></div>
 
-</section>
-
-
-<section class="page3">
-
-    <div class="pics" style="
-    width: 125%;
-    text-align: left;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 0;
-    margin: 0;
-    border: 0;">
-        {% for image in site.static_files %}
-        {% if image.path contains 'assets/photos' %}
-        <img src="{{ image.path }}" height="350px" alt="">
-        {% endif %}
-        {% endfor %}
+        <div class="pics" style="
+width: 125%;
+text-align: left;
+height: 100%;
+position: relative;
+top: 0;
+left: 0;
+padding: 0;
+margin: 0;
+border: 0;">
+            {% for image in site.static_files %}
+            {% if image.path contains 'assets/photos' %}
+            <img src="{{ image.path }}" height="350px" alt="">
+            {% endif %}
+            {% endfor %}
+        </div>
     </div>
 </section>
