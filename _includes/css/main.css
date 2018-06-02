@@ -167,19 +167,18 @@ code.js {
     margin: 50px auto;
 }
 .credit {
-    text-align: justify;
-    color: rgba(0,0,0,0.5);
+    text-align: right;
+    color: rgba(255,255,255,0.7);
     font-style: italic;
     opacity: 0.7;
     clear: both;
-    margin-top: 45px;
+    padding: 10px 0;
 }
 
 .credit a {
-    color: rgba(0,0,0,0.85);
+    color: rgba(255,255,255,0.85);
     text-decoration: none;
     font-weight: bold;
-    text-align: justify;
 }
 
 .back {
@@ -466,4 +465,17 @@ body.disabled-onepage-scroll .main section.page3 .page_container {
     100% {
         opacity: 0;
     }
+}
+
+.txt {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 10px;
+    color: whitesmoke;
+}
+
+.pics {
+    text-align: left;
+    width: 125%;
+    clear: both;
 }
