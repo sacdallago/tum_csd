@@ -479,3 +479,12 @@ body.disabled-onepage-scroll .main section.page3 .page_container {
     width: 125%;
     clear: both;
 }
+
+.switch_lang {
+    text-align: right;
+}
+
+.switch_lang a {
+    text-decoration: underline white dotted;
+    color: whitesmoke;
+}
