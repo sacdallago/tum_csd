@@ -1,3 +1,6 @@
+---
+---
+
 html {
     height: 100%;
 }
@@ -164,21 +167,19 @@ code.js {
     margin: 50px auto;
 }
 .credit {
-    text-align: center;
+    text-align: justify;
     color: rgba(0,0,0,0.5);
-    padding: 10px;
-    width: 410px;
     font-style: italic;
     opacity: 0.7;
     clear: both;
     margin-top: 45px;
-    float: left;
 }
+
 .credit a {
     color: rgba(0,0,0,0.85);
     text-decoration: none;
     font-weight: bold;
-    text-align: center;
+    text-align: justify;
 }
 
 .back {
@@ -212,7 +213,6 @@ header {
 }
 .main section .page_container {
     position: relative;
-    top: 25%;
     margin: 0 auto 0;
     max-width: 950px;
     z-index: 3;
@@ -228,7 +228,10 @@ header {
 }
 
 .main section.page1 {
-    background:rgb(230, 217, 200) url(back-phone.png) no-repeat center -150px ;
+    /*background:rgb(230, 217, 200) url("assets/images/tum_rainbow_smaller.jpg") no-repeat center -150px ;*/
+    /*background:rgb(230, 217, 200) url("assets/images/TUMrainbowsmall.png") no-repeat center -150px ;*/
+
+    background: black;
 }
 .main section.page1 h1 {
     float: none;
@@ -238,7 +241,7 @@ header {
     padding: 0;
     margin-bottom: 15px;
     font-size: 44px;
-    color: black;
+    color: whitesmoke;
 }
 .main section.page1 h2 {
     font-size: 18px;
@@ -260,14 +263,8 @@ header {
 .main section.page2 {
     background: #555557;
 }
-.main section.page2 > img {
-    position: absolute;
-    top: -300px;
-    left: 50%;
-    margin-left: -1095px;
-}
 .main section.page2 .page_container {
-    margin-top: 240px;
+    padding-top: 2em;
     overflow: hidden;
 }
 .main section.page2 h1 {
@@ -280,7 +277,7 @@ header {
 }
 .main section.page2 h2 {
     color: rgba(255,255,255,0.85);
-    text-align: center;
+    text-align: justify;
     line-height: 160%;
     font-weight: 100;
 }
@@ -382,4 +379,92 @@ body.disabled-onepage-scroll .main section.page3 .page_container {
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 14px;
+}
+
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.tumlogo {
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    z-index: 1000
+}
+
+
+/*Scroll*/
+
+
+.scroll {
+    padding-top: 80px;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+}
+.scroll span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: sdb07 2s infinite;
+    animation: sdb07 2s infinite;
+    opacity: 0;
+    box-sizing: border-box;
+}
+.scroll span:nth-of-type(1) {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+}
+.scroll span:nth-of-type(2) {
+    top: 16px;
+    -webkit-animation-delay: .15s;
+    animation-delay: .15s;
+}
+.scroll span:nth-of-type(3) {
+    top: 32px;
+    -webkit-animation-delay: .3s;
+    animation-delay: .3s;
+}
+@-webkit-keyframes sdb07 {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes sdb07 {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }

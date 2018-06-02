@@ -9,8 +9,6 @@ markdown: kramdown
 facebook:
   app_id:
 
-logo: "../_logos/TUMrainbowsmall.png"
-
 social:
   name: TUM ASTA
   link: "https://www.facebook.com/"
@@ -33,3 +31,9 @@ social:
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+defaults:
+  - scope:
+      path: "_assets/images"
+    values:
+      image: true
