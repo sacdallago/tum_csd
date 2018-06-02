@@ -433,15 +433,21 @@ body.disabled-onepage-scroll .main section.page3 .page_container {
     box-sizing: border-box;
 }
 .scroll span:nth-of-type(1) {
+    /*border-left: 1px solid #16ff00;*/
+    /*border-bottom: 1px solid #ffb06f;*/
     -webkit-animation-delay: 0s;
     animation-delay: 0s;
 }
 .scroll span:nth-of-type(2) {
+    /*border-left: 1px solid #ffa63d;*/
+    /*border-bottom: 1px solid #ff664b;*/
     top: 16px;
     -webkit-animation-delay: .15s;
     animation-delay: .15s;
 }
 .scroll span:nth-of-type(3) {
+    /*border-left: 1px solid #b228ff;*/
+    /*border-bottom: 1px solid #616dff;*/
     top: 32px;
     -webkit-animation-delay: .3s;
     animation-delay: .3s;

@@ -14,7 +14,6 @@ layout: def
 <section class="page2">
     <div class="page_container">
         <h1><strong>#LGBTUM</strong> Exzellenz ist Bunt!</h1>
-
         <h2>Die Studentische Vertretung der Technische Universität München stellt dieses Jahr einen Wagen für den Christopher Street Day! Du willst teilnehmen? Hier die Eckdaten:</h2>
         <br /><br />
         <h2>
@@ -38,11 +37,21 @@ layout: def
 
 
 <section class="page3">
-    <div class="page_container">
-        <h1>Pretty Neat Eh?</h1>
-        <h2>You can customize the animation timing, the selector or even the animation easing using CSS3. I can't wait to see what you guys will come up with. Don't forget to grab them for free on Github'</h2>
-        <div class="btns">
-            <a class="reload btn" href="https://helfen.fs.tum.de/csd/">Jetzt Anmelden</a>
-        </div>
+
+    <div class="pics" style="
+    width: 125%;
+    text-align: left;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;">
+        {% for image in site.static_files %}
+        {% if image.path contains 'assets/photos' %}
+        <img src="{{ image.path }}" height="350px" alt="">
+        {% endif %}
+        {% endfor %}
     </div>
 </section>
