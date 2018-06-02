@@ -1,5 +1,57 @@
 ---
 layout: def
 permalink: /en
-title: CSD
 ---
+
+
+<section id="section07" class="page1">
+    <div class="page_container" style="height: 100%;">
+        <div class="tumlogo">
+            <img src="assets/images/TUMrainbowsmall.png" height="150px" alt="">
+        </div>
+        <div class="fullscreen-bg">
+            <video loop muted autoplay poster="assets/images/videoframe.jpg" class="fullscreen-bg__video">
+                <source src="assets/videos/stitces.webm" type="video/webm">
+            </video>
+        </div>
+
+        <div class="scroll"><span></span><span></span><span></span></div>
+    </div>
+
+</section>
+
+<section class="page2">
+    <div class="page_container" style="height: 100%">
+        <div class="txt">
+            <h1><strong>#LGBTUM</strong> Exzellenz ist Bunt!</h1>
+            <h2>The student union of the Technische Universität München organizes a truck for the Cristopher Street Day! You want to participate? Here's what you need to know:</h2>
+            <br /><br />
+            <h2>
+                {% for data in site.data.eckdaten_en %}
+                <strong>{{data.question}}</strong>
+                {{data.answer}}
+                <br />
+                {% endfor %}
+            </h2>
+        </div>
+
+        <div class="btns">
+            <a class="reload btn" href="https://helfen.fs.tum.de/csd/">Sign up!</a>
+            <div class="txt">
+                <p>This offer is only available for TUM students! Please, sign up exclusively with your TUM email address.</p>
+            </div>
+            <a class="text-btn" href="https://helfen.fs.tum.de/csd17helfen/" style="color: whitesmoke">Psst! We are still looking for helpers!</a>
+        </div>
+
+        <div class="pics">
+            {% for image in site.static_files %}
+            {% if image.path contains 'assets/photos' %}
+            <img src="{{ image.path }}" height="350px" alt="">
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+    <div class="credit txt">
+        <a href="http://dallago.us" target="blank">Christian Dallago</a> &amp; <a href="http://bruck.me" target="blank">Kordian Bruck</a>
+    </div>
+</section>
