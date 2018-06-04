@@ -399,6 +399,15 @@ body.disabled-onepage-scroll .main section.page3 .page_container {
     right: 10px;
 }
 
+.tumlogo img {
+    max-height: 150px;
+}
+
+@media only screen and (max-width: 768px) {
+    .tumlogo img {
+        max-height: 70px;
+    }
+}
 
 /*Scroll*/
 
