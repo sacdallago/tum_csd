@@ -169,10 +169,8 @@ code.js {
 .credit {
     text-align: right;
     color: rgba(255,255,255,0.7);
-    font-style: italic;
-    opacity: 0.7;
     clear: both;
-    padding: 10px 0;
+    padding-bottom: 2em !important;
 }
 
 .credit a {
@@ -309,7 +307,7 @@ body.disabled-onepage-scroll .onepage-wrapper  section {
 
 body.disabled-onepage-scroll .main section .page_container, body.disabled-onepage-scroll .main section.page3 .page_container  {
     padding: 20px;
-    margin-top: 150px;
+    margin-top: 50px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
