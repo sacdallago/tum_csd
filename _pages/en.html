@@ -3,41 +3,26 @@ layout: def
 permalink: /en
 ---
 
-<section class="page2">
-    <div class="page_container" style="height: 100%">
-        <div class="txt">
-            <h1><strong>#LGBTUM</strong> Exzellenz ist Bunt!</h1>
-            <p class="switch_lang"><a href="/">[DE]</a></p>
-            <h2>The student union of the Technische Universität München organizes a truck for the Christopher Street Day! You want to participate? Here's what you need to know:</h2>
-            <br /><br />
-            <h2>
-                {% for data in site.data.eckdaten_en %}
-                <strong>{{data.question}}</strong>
-                {{data.answer}}
-                <br />
-                {% endfor %}
-            </h2>
-        </div>
 
-        <div class="btns">
-            <a class="reload btn" href="https://helfen.fs.tum.de/CSD2018/">Sign up!</a>
-            <div class="txt">
-                <p>This offer is only available for TUM students! Please, sign up exclusively with your TUM email address.</p>
-            </div>
-            <a class="text-btn" href="https://helfen.fs.tum.de/CSD2018Helfer/" style="color: whitesmoke">Psst! We are still looking for helpers!</a>
-        </div>
+<div class="txt">
+    <h1><strong>#LGBTUM</strong> Exzellenz ist Bunt!</h1>
+    <p class="switch_lang"><a href="/">[DE]</a></p>
+    <h2>The student union of the Technische Universität München organizes a truck for the Christopher Street Day! You want to participate? Here's what you need to know:</h2>
+    <br /><br />
+    <h2>
+        {% for data in site.data.eckdaten_en %}
+        <strong>{{data.question}}</strong>
+        {{data.answer}}
+        <br />
+        {% endfor %}
+    </h2>
+</div>
 
-        <div class="pics">
-            {% for image in site.static_files %}
-            {% if image.path contains 'assets/photos' %}
-            <img src="{{ image.path }}" height="350px" alt="">
-            {% endif %}
-            {% endfor %}
-        </div>
+<div class="btns">
+    <a class="reload btn" href="https://helfen.fs.tum.de/CSD2018/">Sign up!</a>
+    <div class="txt">
+        <p>This offer is only available for TUM students! Please, sign up exclusively with your TUM email address.</p>
     </div>
-    <div class="credit txt">
-        Event organization: <a href="http://bruck.me" target="blank">Kordian Bruck</a> <br />
-        Webpage & UI: <a href="http://dallago.us" target="blank">Christian Dallago</a> <br />
-        Logo: <a href="http://lepuschitz.design" target="blank">Simon Lepuschitz</a> <br />
-    </div>
-</section>
+    <a class="text-btn" href="https://helfen.fs.tum.de/CSD2018Helfer/" style="color: whitesmoke">Psst! We are still looking for helpers!</a>
+</div>
+

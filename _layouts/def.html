@@ -58,7 +58,27 @@
             </div>
         </section>
 
-        {{ content }}
+        <section class="page2">
+            <div class="page_container" style="height: 100%">
+
+                {{ content }}
+
+                <div class="pics">
+                    {% for image in site.static_files %}
+                    {% if image.path contains 'assets/photos' %}
+                    <img src="{{ image.path }}" height="350px" alt="">
+                    {% endif %}
+                    {% endfor %}
+                </div>
+
+                <div class="credit txt">
+                    Event organization: <a href="http://bruck.me" target="blank">Kordian Bruck</a> <br />
+                    Webpage & UI: <a href="http://dallago.us" target="blank">Christian Dallago</a> <br />
+                    Design & Gfx: <a href="#">Benedict Gruber</a> <br />
+                    Logo: <a href="http://lepuschitz.design" target="blank">Simon Lepuschitz</a> <br />
+                </div>
+            </div>
+        </section>
     </div>
 </div>
 
