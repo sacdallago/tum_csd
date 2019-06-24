@@ -1,6 +1,6 @@
 title: TUM CSD
 description: > # this means to ignore newlines until "baseurl:"
-  TUM CSD event 2018
+  TUM CSD event 2019
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "Your-Link.github.io" # the base hostname & protocol for your site
 # Build settings
